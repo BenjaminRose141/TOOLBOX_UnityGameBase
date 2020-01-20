@@ -4,41 +4,45 @@ using UnityEngine;
 
 public class Timer
 {
-    public float currentTime = 0;
-    public float maxTime = 0;
-    public bool paused = false;
+    private float currentTime = 0;
+    private float maxTime = 0;
+    private bool paused = false;
     private bool countingDown = true;
 
     public bool CountingDown { get => countingDown; set => countingDown = value; }
+    public float CurrentTime { get => currentTime; set => currentTime = value; }
+    public float MaxTime { get => maxTime; set => maxTime = value; }
+    public bool Paused { get => paused; set => paused = value; }
 
-    public void Start(float max)
+
+    public void Init(float max)
     {
-        maxTime = max;
-        currentTime = maxTime;
+        MaxTime = max;
+        CurrentTime = MaxTime;
     }
 
     public void Tick()
     {
-        if (!paused)
+        if (!Paused)
         {
             if(CountingDown)
             {
-                currentTime -= Time.deltaTime;
+                CurrentTime -= Time.deltaTime;
             }
             else
             {
-                currentTime += Time.deltaTime;
+                CurrentTime += Time.deltaTime;
             }
         }
     }
 
     public void ResetTimer()
     {
-        currentTime = maxTime;
+        CurrentTime = MaxTime;
     }
 
     public void TogglePause()
     {
-        paused = !paused;
+        Paused = !Paused;
     }
 }
