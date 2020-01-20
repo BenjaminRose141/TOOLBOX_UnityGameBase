@@ -177,8 +177,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'You have completed every level!
 
-    The position of the Needles are randomized so you can replay the game without
-    worry.
+    *INSERT MORE TEXT HERE*
 
 
     Thank you for playing!'
@@ -250,12 +249,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 45554402}
-    characterCount: 140
+    characterCount: 79
     spriteCount: 0
-    spaceCount: 24
-    wordCount: 24
+    spaceCount: 13
+    wordCount: 13
     linkCount: 0
-    lineCount: 5
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

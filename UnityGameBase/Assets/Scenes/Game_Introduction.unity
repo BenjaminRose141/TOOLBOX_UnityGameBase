@@ -175,13 +175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The objective is to find and click the Needle card by dragging the Haystack
-    cards out of the way.
-
-    This game is meant to be played in Hotseat style. The second player should not
-    watch the first player as their haystacks are identical.
-
-    Whoever finds the needle faster wins!
+  m_text: '*ADD GAME INSTRUCTIONS HERE*
 
     Have fun playing!'
   m_isRightToLeft: 0
@@ -252,12 +246,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 45554402}
-    characterCount: 289
+    characterCount: 46
     spriteCount: 0
-    spaceCount: 51
-    wordCount: 52
+    spaceCount: 6
+    wordCount: 7
     linkCount: 0
-    lineCount: 7
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
