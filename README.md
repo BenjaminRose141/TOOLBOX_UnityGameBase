@@ -18,7 +18,8 @@ The basic setup includes:
  - Singleton Class
  - Timer Class
  - some basic behaviour scripts for quick prototyping
- - ...
+ - a few useful extensions
+ - some very basic reference scripts (should probably be removed soon)
 
 ## License
 
