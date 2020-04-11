@@ -10,6 +10,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 
     [Header("Singleton")]
     [SerializeField] protected bool dontDestroyOnLoad = false;
+    protected bool overrideAutospawn = false;
 
     protected virtual void Awake()
     {
@@ -60,5 +61,29 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         }
 
         return instance;
+    }
+
+    public static void TrySetInstance(T requestedInstance)
+    {
+        if(instance == null)
+        {
+            instance = requestedInstance;
+        }
+        else
+        {
+            Debug.LogError("Setting Instance was Requested but there already exists one in " + instance.gameObject.name);
+        }
+    }
+
+    public static bool ExistingInstance()
+    {
+        if(instance != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
